@@ -1,0 +1,32 @@
+.create_post__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px groove #121212;
+    width: 50%;
+}
+
+.create_post__container textarea {
+    font-size: 1.2rem;
+    width: 98%;
+    height: 5rem;
+    outline: none;
+    border: none;
+    resize: none;
+}
+.create_post__container button {
+    display: flex;
+    justify-self: end;
+    align-self: flex-end;
+    outline: none;
+    border: none;
+    background-color: #121212;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+}

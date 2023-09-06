@@ -1,0 +1,22 @@
+.welcome_msg__container {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+
+
+.welcome_msg_text p {
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.posts_feed__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}

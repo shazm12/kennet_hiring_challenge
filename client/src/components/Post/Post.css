@@ -1,0 +1,42 @@
+.post__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.5px groove #121212;
+    width: 50%;
+}
+
+.post__caption {
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.post__username {
+    font-size: 0.9rem;
+    font-family: 'Courier New', Courier, monospace;
+    align-self: flex-end;
+    margin-right: 0.5rem;
+    font-weight: bold;
+} 
+
+.divider {
+
+    background-color: #121212;
+    height: 0.1rem;
+    width: 98%;
+    border-radius: 25px;
+
+}
+
+.post_comment_box {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}

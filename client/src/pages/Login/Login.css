@@ -1,0 +1,48 @@
+.login__container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    width: "100%";
+    justify-content: center;
+    align-items: center;
+}
+
+.login__text {
+    font-family:'Courier New', Courier, monospace;
+    text-shadow: 1px 2px 5px #adadad;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__form input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1rem;
+    width: 25%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.login__form button {
+    background-color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.5s ease-in-out;
+}
+
+.login__form button:hover {
+    background-color: #adadad;
+    color:#fff;
+    border-radius: 5px;
+}
