@@ -6,6 +6,7 @@ const db = require("./config/db.js");
 const UserRoute = require("./routes/UserRoute.js");
 const PostRoute = require("./routes/PostRoute.js");
 const CommentRoute = require("./routes/CommentRoute.js");
+const serverless = require('serverless-http');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -23,4 +24,9 @@ app.use("/user", UserRoute);
 app.use("/post", PostRoute);
 app.use("/comment", CommentRoute);
 
-app.listen(PORT, () => console.log(`App listening on port:${PORT}`));
+if(process.env.ENVIRONMENT === "dev") {
+  app.listen(PORT, () => console.log(`App listening on port:${PORT}`));
+}
+else {
+  module.exports.handler = serverless(app)
+}
