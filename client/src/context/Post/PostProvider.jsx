@@ -5,10 +5,11 @@ const PostProvider = ({ children }) => {
   const [posts, setPosts] = useState([]);
   const [post, setPost] = useState("");
   const [comments, setComments] = useState([]);
+  const baseUrl =import.meta.env.VITE_API_URL;
 
   const getAllPosts = async () => {
     try {
-      const response = await fetch("http://localhost:8000/post/get", {
+      const response = await fetch(`${baseUrl}/post/get`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -57,7 +58,7 @@ const PostProvider = ({ children }) => {
 
   const getAllComments = async () => {
     try {
-      const response = await fetch("http://localhost:8000/comment/get", {
+      const response = await fetch(`${baseUrl}/comment/get`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -78,7 +79,7 @@ const PostProvider = ({ children }) => {
     };
 
     try {
-      await fetch("http://localhost:8000/comment/create", {
+      await fetch(`${baseUrl}/comment/create`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -107,7 +108,7 @@ const PostProvider = ({ children }) => {
       caption: post,
     };
     try {
-      await fetch("http://localhost:8000/post/create", {
+      await fetch(`${baseUrl}/post/create`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -6,13 +6,14 @@ const UserProvider = ({ children }) => {
     const [userId, setUserId ] = useState("");
 
     const updateUserName = (value) => setUserName(value);
+    const baseUrl = import.meta.env.VITE_API_URL;
 
     const saveUserInDB = async() => {
         const payload = {
             name: userName
         }
         try {
-            const response = await fetch('http://localhost:8000/user/login', {
+            const response = await fetch(`${baseUrl}/user/login`, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
