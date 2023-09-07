@@ -45,5 +45,21 @@ I have followed an MVC architecture for my microservice and will deploy my servi
    ```
 4. Now if you do not get any errors in your terminal, try out the app by going to `http://localhost:5173/`.
 
+# Completed
+
+- A Login Page.
+- A Feed page to show and create posts.
+- A create post component.
+- A Comment box component to add comments to posts.
+- A Comment list component to show a list of components.
+- Search Bar Component to search for posts and comments.
+- Deployed Client on AWS and Server as a Lambda Function.
+- Setup Docker-Compose to use the app in the dev environment.
+
+## Issues and Bugs
+
+- A new Comment does not show up after adding. (Need to go back to login and then come to feed after logging in to see changes).
+- After searching for some posts or comments,  we aren’t able to search for any other post or comment other than the recently searched post.
+
 # Contact Me 
 For any queries or if you want to react with me to discuss this project, drop me an email at [berashamik115@gmail.com](mailto:berashamik115@gmail.com).
