@@ -45,7 +45,7 @@ I have followed an MVC architecture for my microservice and will deploy my servi
    ```
 4. Now if you do not get any errors in your terminal, try out the app by going to `http://localhost:5173/`.
 
-# Completed
+# Completed Tasks
 
 - A Login Page.
 - A Feed page to show and create posts.
@@ -56,7 +56,7 @@ I have followed an MVC architecture for my microservice and will deploy my servi
 - Deployed Client on AWS and Server as a Lambda Function.
 - Setup Docker-Compose to use the app in the dev environment.
 
-## Issues and Bugs
+# Issues and Bugs
 
 - A new Comment does not show up after adding. (Need to go back to login and then come to feed after logging in to see changes).
 - After searching for some posts or comments,  we aren’t able to search for any other post or comment other than the recently searched post.
