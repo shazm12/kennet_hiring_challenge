@@ -10,18 +10,17 @@ const createComment = async (req, res) => {
   }
 };
 
-const getComments = async(req , res) => {
-    try {
-        const comments = await Comment.find().populate(["author", "post"]).exec();
-        if (comments) res.status(200).send({ comments });
-        else {
-         res.status(200).send({ message: "No Commments for this post" });
-        }
+const getComments = async (req, res) => {
+  try {
+    const comments = await Comment.find().populate(["author", "post"]).exec();
+    if (comments) res.status(200).send({ comments });
+    else {
+      res.status(200).send({ message: "No Commments for this post" });
     }
-    catch (err) {
-        res.status(501).send({ error: err.message });
-    }
-} 
+  } catch (err) {
+    res.status(501).send({ error: err.message });
+  }
+};
 
 const getCommentsByPostId = async (req, res) => {
   try {
