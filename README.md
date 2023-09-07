@@ -53,7 +53,7 @@ I have followed an MVC architecture for my microservice and will deploy my servi
 - A Comment box component to add comments to posts.
 - A Comment list component to show a list of components.
 - Search Bar Component to search for posts and comments.
-- Deployed Client on AWS and Server as a Lambda Function.
+- Deployed Client on Netlify and Server as a Lambda Function.
 - Setup Docker-Compose to use the app in the dev environment.
 
 # Issues and Bugs
