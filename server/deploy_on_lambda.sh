@@ -42,6 +42,7 @@ if [ $? -eq 0 ]; then
     --function-name SM_Kennet_Server \
     --no-cli-pager \
     --zip-file fileb://function_zipped.zip
+
 else
     aws lambda create-function \
         --function-name SM_Kennet_Server \

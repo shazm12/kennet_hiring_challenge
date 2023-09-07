@@ -24,6 +24,7 @@ app.use("/user", UserRoute);
 app.use("/post", PostRoute);
 app.use("/comment", CommentRoute);
 
+
 if(process.env.ENVIRONMENT === "dev") {
   app.listen(PORT, () => console.log(`App listening on port:${PORT}`));
 }

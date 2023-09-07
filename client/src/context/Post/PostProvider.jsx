@@ -1,11 +1,13 @@
 import { useState } from "react";
 import PostContext from "./PostContext";
+// would not get commited in github for now -> Used this approach as Netlify has issues in in injecting env variables for Vite React App.
+import { deployedAPIUrl } from "../../utils";
 
 const PostProvider = ({ children }) => {
   const [posts, setPosts] = useState([]);
   const [post, setPost] = useState("");
   const [comments, setComments] = useState([]);
-  const baseUrl =import.meta.env.VITE_API_URL;
+  const baseUrl =import.meta.env.VITE_API_URL || deployedAPIUrl;
 
   const getAllPosts = async () => {
     try {

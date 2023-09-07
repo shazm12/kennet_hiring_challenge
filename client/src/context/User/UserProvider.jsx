@@ -1,12 +1,14 @@
 import { useState } from "react"
-import UserContext from "./UserContext"
+import UserContext from "./UserContext";
+// would not get commited in github for now -> Used this approach as Netlify has issues in in injecting env variables for Vite React App.
+import { deployedAPIUrl } from "../../utils";
 
 const UserProvider = ({ children }) => {
     const [userName, setUserName ] = useState("");
     const [userId, setUserId ] = useState("");
 
     const updateUserName = (value) => setUserName(value);
-    const baseUrl = import.meta.env.VITE_API_URL;
+    const baseUrl = import.meta.env.VITE_API_URL || deployedAPIUrl;
 
     const saveUserInDB = async() => {
         const payload = {
