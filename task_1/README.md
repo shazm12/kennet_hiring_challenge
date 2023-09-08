@@ -1,5 +1,6 @@
 # Kennet Hiring Challenge
 A Social Media App that allows users to post text posts and comment on them.
+Deployed  [here](https://64f99f5f01e0c65d054c3f43--smkennetapp.netlify.app/).
 
 # Workflow of The App.
 This UML Diagram would help you understand the relationship between all the entities used here. 
