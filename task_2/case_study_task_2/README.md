@@ -1,6 +1,7 @@
 # getPrimesInRange Stats Web App
 
 - The following web app marks whether a number is a prime or not in a given range (inclusive).
+- Deployed [here](https://64faf38f7c8f09654b0d40e0--getprimesinrangestats.netlify.app/).
 - The Web app also gives performance statistics like:
   - Total time taken to run all instances
   - Average time taken to determine if a single number is prime in front of each number
