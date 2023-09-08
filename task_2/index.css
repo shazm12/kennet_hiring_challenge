@@ -1,0 +1,122 @@
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+.header__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.stats__container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem;
+}
+
+.stats__container p {
+    font-size: 1.1rem;
+}
+
+.stats__container button {
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 0.8rem 0.8rem;
+    background-color: #121212;
+    color: aliceblue;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input__container input {
+    outline: none;
+    margin-top: 1rem;
+    border: 1px solid #121212;
+    padding: 0.5rem 0.5rem;
+
+}
+
+.input__container button {
+    padding: 0.5rem 0.5rem;
+    border: none;
+    outline: none;
+    background-color: #121212;
+    color:#fff;
+    font-size: 1rem;
+    border-radius:  5px;
+    cursor: pointer;
+
+}
+
+.modal__container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 20%;
+    top: 10%;
+    width: 60%;
+    height: 80%;
+    padding: 0.5rem 0.5rem;
+    overflow-y: auto; /* Enable vertical scrolling within the modal content */
+   
+    background-color: rgb(255, 255, 255);
+    border: 1px groove #121212;
+    box-shadow: 2px 4px 12px #1212125e;
+}
+
+#ex2b {
+    margin-top: 1rem;
+    position: relative; /* Make sure the content is positioned relatively */
+}
+
+#ex2c {
+    margin-top: 1rem;
+    position: relative; /* Make sure the content is positioned relatively */
+}
+
+.modal__container label {
+    margin: 2rem 0rem;
+}
+
+
+
+.modal__container table {
+    width: 80%;
+}
+
+.modal__container table, th, td {
+    border: 1px solid #121212;
+    z-index: 1000;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.modal__container button {
+    margin-top: 1rem;
+    padding: 0.5rem 0.5rem;
+    background-color: #121212;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

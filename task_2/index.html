@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>getPrimesInRange Stats</title>
+    </head>
+    <body>
+        <div class="main__container">
+            <div class="header__container">
+                <h1 class="header__text">getPrimesInRange Stats</h1>
+            </div>
+
+            <div class="input__container">
+                <input id="start" name="start" type="number" />
+                <input id="end" name="end" type="number" />
+                <button onclick="getPrimesInRangeStatsAndPopulateinPage()">Get
+                    Stats</button>
+                <button onclick="resetAll()">Reset</button>
+            </div>
+            <div id="stats_info" class="stats__container"></div>
+        </div>
+
+        <div id="modal" class="modal__container">
+            <label>Task 2B Table</label>
+            <table id="ex2b">
+                <tr>
+                    <th>Number</th>
+                    <th>Result</th>
+                    <th>Time in ms</th>
+                </tr>
+            </table>
+
+            <label>Task 2C Table</label>
+            <table id="ex2c">
+                <tr>
+                    <th>Number</th>
+                    <th>Time in ms</th>
+                </tr>
+            </table>
+
+            <button onclick="closeModal()">Close Modal</button>
+
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+
+    </body>
+</html>

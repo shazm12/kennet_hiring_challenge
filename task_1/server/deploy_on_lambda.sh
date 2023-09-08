@@ -51,7 +51,7 @@ else
         --handler index.handler \
         --zip-file fileb://function_zipped.zip \
         --no-cli-pager \
-        --environment Variables={MONGODB_URI='mongodb+srv://user:MX0oV3MHiqM9WIN7@cluster0.1esfo.mongodb.net/?retryWrites=true&w=majority',PORT=8000,ENVIRONMENT=prod}    
+        --environment Variables={MONGODB_URI='YOUR MONGO_URI',PORT=8000,ENVIRONMENT=prod}    
 fi
 
 
